@@ -1,5 +1,5 @@
 import React from "react";
-import vite from "../../public/vite.svg";
+import vite from "../assets/vite.svg";
 import react from "../assets/react.svg";
 
 const Navbar = () => {
