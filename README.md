@@ -51,3 +51,24 @@ Run your build process with npm run dev.
 ```
 > npm run dev
 ```
+
+
+### Extentions
+ES7+ React/Redux/React-Native snippets
+
+```
+rafce
+```
+
+## Router
+This package simply re-exports everything from `react-router` to smooth the upgrade path for v6 applications.
+
+```
+npm i react-router-dom
+```
+
+
+```
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+
+....
