@@ -1,7 +1,6 @@
 import React from "react";
 import vite from "../assets/vite.svg";
 import react from "../assets/react.svg";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -28,6 +27,12 @@ const Navbar = () => {
                   Home
                 </NavLink>
                 <NavLink
+                  to="/users"
+                  className={linkClass}
+                >
+                  Users
+                </NavLink>
+                <NavLink
                   to="/about"
                   className={linkClass}
                 >
@@ -37,17 +42,17 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <div class="relative ml-3">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="relative ml-3">
               <button
                 type="button"
-                class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-500"
+                className="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-500"
                 id="user-menu-button"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
                 <img
-                  class="size-8 rounded-full"
+                  className="size-8 rounded-full"
                   src={react}
                   alt="profile"
                 />
