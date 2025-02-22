@@ -11,14 +11,16 @@ import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import UsersPage from "./pages/UsersPage";
 import UserInfoPage, { userLoader } from "./pages/UserInfoPage";
+import EditUser from "./components/EditUser";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />} >
       <Route index element={<HomePage />} />
-      <Route path="/users" element={<UsersPage />}/>
       <Route path="/about" element={<AboutPage />}/>
+      <Route path="/users" element={<UsersPage />}/>
       <Route path="/users/:id" element={<UserInfoPage />} loader={userLoader} />
+      <Route path="/user/edit/:id" element={<EditUser />} loader={userLoader} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   )

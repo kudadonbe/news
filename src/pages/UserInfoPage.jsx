@@ -7,7 +7,7 @@ import Card from '../components/Card';
 
 
 const UserInfoPage = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
   const user = useLoaderData();
   return (
     <>

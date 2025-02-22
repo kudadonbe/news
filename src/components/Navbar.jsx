@@ -1,7 +1,7 @@
 import React from "react";
 import vite from "../assets/vite.svg";
 import react from "../assets/react.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -14,7 +14,9 @@ const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
+              <Link to={'/'}>
               <img className="h-8 w-auto" src={vite} alt="News" />
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">

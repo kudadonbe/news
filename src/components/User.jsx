@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,6 +12,8 @@ const User = (user) => {
         <p>{user.dob}</p>
         <p>{user.address.house}</p>
         <p>{user.address.island}</p>
+        <Link to={`/user/edit/${user.id}`}>Edit</Link>
+        
     </div>
   )
 }
