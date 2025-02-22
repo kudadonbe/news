@@ -11,7 +11,7 @@ const Users = () => {
         const data = await res.json();
         setPatients(data.data);
       } catch (error) {
-        console.log("Error geting data", error);
+        console.log("Error getting data", error);
       }
     };
 

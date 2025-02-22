@@ -11,7 +11,7 @@ import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import UsersPage from "./pages/UsersPage";
 import UserInfoPage, { userLoader } from "./pages/UserInfoPage";
-import EditUser from "./components/EditUser";
+import UserEditPage from "./pages/UserEditPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       <Route path="/about" element={<AboutPage />}/>
       <Route path="/users" element={<UsersPage />}/>
       <Route path="/users/:id" element={<UserInfoPage />} loader={userLoader} />
-      <Route path="/user/edit/:id" element={<EditUser />} loader={userLoader} />
+      <Route path="/user/edit/:id" element={<UserEditPage />} loader={userLoader} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   )
